@@ -1,5 +1,3 @@
 # Introduction
 
-General learning of Python with notes and practice problems. 
-
-Test push
+General learning of Python with notes and practice problems.
