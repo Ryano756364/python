@@ -63,4 +63,4 @@ Dead Simple Python - Jason C. McDonald 2023
   * Two options:
     * (1) Create virtual environments outside your repository
     * (2) Untrack the virtual environment directory in the VCS
-  * 
+  * arguments in favor of both rules
