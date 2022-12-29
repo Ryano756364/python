@@ -64,3 +64,66 @@ Dead Simple Python - Jason C. McDonald 2023
     * (1) Create virtual environments outside your repository
     * (2) Untrack the virtual environment directory in the VCS
   * arguments in favor of both rules
+* Shebang
+  * Strongly recommended to add a shebang line at top of a Python file so that file can be directly executable
+  * for Python 3
+    > #!/usr/bin/env python3
+  * for *both* python2 and python3
+    > #!/usr/bin/env python
+* Virtual Environment Tips and Tricks
+  * You can use binaries that are a part of the VE without activating it
+    * assuming VE is **venv**
+      > venv/bin/pip install pylint
+      > venv/bin/python
+      > .
+      > import pylint
+    * this works! will not be system wide unless you installed pylint for the whole system
+  * Most used in this book:
+    * pip and venv
+    * alternatives worth looking into:
+      * Pipenv
+        * combines both pip and venv into one cohesive tool
+        * not covered in this book
+        * https://docs.pipenv.org/
+      * pip-tools
+        * use only within virtual environments as it's designed specifically for that use case
+        * https://pypi.org/project/pip-tools/
+      * poetry
+        * some developers hate pip altogether
+        * poerty is an alternative package manager
+        * don't use pip to install it
+        * https://python-poetry.org/
+* PEP 8
+  * Python's official style guide known as *PEP 8*
+  * not mandatory for a project but should be followed
+  * consistency of style in a project or design is the most important
+* 80/100
+  * Try to keep characters on line limited to 80 but hard cutoff should be 100
+* Spaces
+  * PEP 8 recommends spaces over tabs, techincally
+  * at least don't mix the two
+  * use one or the other and stick throughout project that way
+  * if spaces, are used
+    * use 4
+  * most code editors use 4 spaces for tabs anyway
+* Static analyzer
+  * one most common type is a *linter*
+  * for python:
+    * *Pylint* and *PyFlakes*
+  * Additional support
+    * *Mypy* and *mccabe*
+* Autoformatting tools
+  * *autopep8*
+  * to fix most PEP 8 issues, run this
+    > autopep8 --in-place --aggressive --aggressive *filetochange.py*
+  * *black*
+    * install this with pip as well
+    * simpler
+      > black filetochange.py
+* Testing frameworks
+  * Recommended:
+    * *Pytest*
+    * *nose2*
+    * *unittest*
+    * all of these are installed with pip
+* 
