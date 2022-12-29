@@ -1,6 +1,11 @@
 # Introduction
 
-General learning of Python with notes and practice problems.
+    The goal of documenting my learning is to show my passion for always learning and reading.
+    
+    I first document what I learn, then follow along with projects, then move onto building my own projects. 
+    
+    I call the notes I take as I read 'breadcrumbs' where my future self will thank me for writing down what I have learned
+    but more importantly, practiced it by building out projects.
 
 ## Resources used
 
