@@ -19,3 +19,8 @@ split \
 over \
 one line"""
 print(anotherSplitString)  # prints one line
+
+# what if you wanted to use the \ character
+print("This will add a \\ to the output")
+# raw string can be used
+print(r"This will also add a \ character")
