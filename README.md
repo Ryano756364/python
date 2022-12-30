@@ -7,6 +7,9 @@
     I call the notes I take as I read 'breadcrumbs' where my future self will thank me for writing down what I have learned
     but more importantly, practiced it by building out projects.
 
+    *Note on module names and file names:  I am aware starting with an int is a bad idea but I only did this for organizational purposes
+    *In any notes, I am also aware of the 80/100 length limit and rarely go over that. Any production code would adhere to this very strongly. 
+
 ## Resources used
 
 Dead Simple Python - Jason C. McDonald 2023
