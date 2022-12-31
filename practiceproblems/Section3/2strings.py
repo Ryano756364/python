@@ -35,3 +35,6 @@ print(type(age))  # <class 'str'>
 # Python is NOT weakly typed
 # rebinding is what happens when flipping from int to String (although you don't want to do it in real life)
 
+# f strings
+print(name + " is {age} years old")     # Ryan is {age} years old
+print(name + f" is {age} years old")    # # Ryan is 2 years old
