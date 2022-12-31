@@ -2,3 +2,5 @@
 
 ## Blocks and Statements
 - Python uses blocks of code and not { }
+
+## if, elif, and else
