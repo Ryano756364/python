@@ -1,3 +1,17 @@
+# 0 is False
+if 0:
+    print("True")
+else:
+    print("False")
+
+# empty strings are False
+name = input("Please enter your name: ")
+if name != "":
+    print("Hello, {}".format(name))
+else:
+    print("Are you the person with no name?")
+
+
 day = "Monday"
 tempurate = 30
 raining = True  # capital T
