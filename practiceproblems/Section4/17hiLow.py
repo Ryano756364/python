@@ -30,6 +30,9 @@ while True:
     else:
         print("Please enter h, l, or c")
 
+    # Make sure to use augmented assigned as guesses = guess + 1 is less efficient
+    # in Java it wouldn't be as efficient because  Python evaluates guesses twice
+    # AA also works on strings too
     guesses += 1
 
 # binary search | integer division | pass
