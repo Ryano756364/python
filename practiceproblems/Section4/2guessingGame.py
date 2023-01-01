@@ -17,6 +17,8 @@ else:
     else:
         print("Sorry, you have not guessed correctly")
 
+# many ways to write a problem out (although I though Python wants one best way?)
+
 # if guess < answer:
 #     print("Please guess higher")
 #     guess = int(input())    # notice indent is the same, single = is involved with binding
