@@ -13,7 +13,7 @@ max_valid = 200
 #         print(index, data)
 
 # using an enumerator is more efficient especially when you get lists
-# of items > 1000
+# of items > 10,000
 for index, value in enumerate(reversed(data)):
     print(index, value)  # reverse order of list
 print(data)  # data in same order as it was instantiated
