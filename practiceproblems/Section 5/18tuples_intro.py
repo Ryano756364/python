@@ -1,6 +1,6 @@
 t = "a", "b", "c"
 print(t)  # ('a', 'b', 'c')
-# notice the paranthesis instead of brackets []
+# notice the parenthesis instead of brackets []
 
 t = ("a", "b", "c")  # this works too and there are times when () are necessary
 print(t)
@@ -20,6 +20,15 @@ print((name, year, "Python", 2022))  # (Ryan 2023 Python 2022)
 # Tuples use less memory than Lists
 # Tuples protect integrity of data
 
-# you can turn a Tupple into a List as below:
+# you can turn a Tuple into a List as below:
 list_form = list(t)
 print(list_form)  # ['a', 'b', 'c']
+
+# unpacking a Tuple
+list_of_letters = ["a", "b", "c"]
+x, y, z = list_of_letters
+print(list_of_letters)  # ['a', 'b', 'c']
+print(x, y, z)  # a b c
+# another advantage is Tuple's are ALWAYS unpacked successfully
+# (when program works of course and there aren't too many variables
+# to upack into the Tuple)
