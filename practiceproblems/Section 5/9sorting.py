@@ -19,5 +19,21 @@ print(numbers)  # sorted list
 print(another_sorted_numbers)  # None
 # this is due to line 17 not returning any list
 
-missing_letter = sorted("The quick brown fox jumped over the lazy dog")
-print(missing_letter)
+# case-insensitive sort
+missing_letter = sorted("The quick brown fox jumped over the lazy dog",
+                        key=str.casefold)  # don't include () on casefold
+print(missing_letter)  # capital T gets sorted just like any other letter
+
+names = ["Graham",
+         "John",
+         "terry",
+         "eric",
+         "Terry",
+         "michael"
+         ]
+
+names.sort()
+print(names)  # ['Graham', 'John', 'Terry', 'eric', 'michael', 'terry']
+
+names.sort(key=str.casefold)
+print(names)  # ['eric', 'Graham', 'John', 'michael', 'Terry', 'terry']
