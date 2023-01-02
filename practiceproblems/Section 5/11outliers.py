@@ -30,3 +30,17 @@ for index, value in enumerate(data):
 print(stop)  # for debugging
 del data[:stop]
 print(data)
+
+
+# process the high values in the list
+start = 0
+for index in range(len(data) - 1, -1, -1):  # second -1 makes us start at the end
+    if data[index] <= max_valid:
+        # we have the index of the last item to keep
+        # set 'start' to teh position of the first
+        # item to delete, which is 1 after 'index'
+        start = index + 1
+        break
+print(start)  # for debugging
+del data[start:]
+print(data)
