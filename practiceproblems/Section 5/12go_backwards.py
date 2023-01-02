@@ -12,6 +12,8 @@ max_valid = 200
 #         del data[index]
 #         print(index, data)
 
+# using an enumerator is more efficient especially when you get lists
+# of items > 1000
 for index, value in enumerate(reversed(data)):
     print(index, value)  # reverse order of list
 print(data)  # data in same order as it was instantiated
