@@ -6,8 +6,12 @@ max_valid = 200
 
 # middle -1 is to capture first item in list
 # third -1 is to operate backwards
-for index in range(len(data) -1, -1, -1):
-    if data[index] < min_valid or data[index] > max_valid:
-        del data[index]
-        print(index, data)
-print(data)
+
+# for index in range(len(data) -1, -1, -1):
+#     if data[index] < min_valid or data[index] > max_valid:
+#         del data[index]
+#         print(index, data)
+
+for index, value in enumerate(reversed(data)):
+    print(index, value)  # reverse order of list
+print(data)  # data in same order as it was instantiated
