@@ -21,4 +21,9 @@ string_numbers = ['9', '223', '372', '036', '865']
 int_numbers = []
 for string_number in string_numbers:
     int_numbers.append(int(string_number))
-print(int_numbers)
+print(int_numbers)  # [9, 223, 372, 36, 865]
+
+# another method
+for index in range(len(string_numbers)):
+    string_numbers[index] = int(string_numbers[index])
+print(string_numbers)  # [9, 223, 372, 36, 865]
