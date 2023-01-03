@@ -26,3 +26,11 @@ for val in range(1,5):
 # that they appear
 
 # Scope -> where a variable exists
+
+def is_palindrome(string):
+    # backwards = string[::-1]
+    # return backwards == string  # or use more concise code below
+    return string[::-1].casefold() == string.casefold()
+
+print(is_palindrome("foOf"))
+print(is_palindrome("fOod"))

@@ -8,3 +8,9 @@
 - https://docs.python.org/3/library/functions.html
 
 ---
+## Resources
+
+- string methods
+- https://docs.python.org/3/library/string.html
+
+---
